@@ -1,0 +1,42 @@
+GitLab tutorials were accessed today, Oct 18th, 2023.
+I set up my GitHub account in 2019/2020
+
+1. Console output from pushing changes
+
+Wyatt@DESKTOP-9OIIOVL MINGW64 ~/Desktop/Assignment/assignment2 (master)
+$ git push
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 1.30 KiB | 1.30 MiB/s, done.
+Total 7 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To github.com:WyattMorris/assignment2.git
+   f4975e5..44b02fa  master -> master
+
+2. 9 total commits, counting them with git log, or there is also git rev-list --all --count.
+
+3. README.md file was edited by me today Oct 18th 2023, and Sept 25th, 2019. This is showing in git log.
+
+4. Branches are used in a repository so that people can work on a repository at the same time, they are also used to specify what work you are doing at the time. It separates your work into stages, if you implement something that is faulty, you can reset to a working version.
+
+5. git log shows previous commit history, git status shows status of current staged/unstaged changes in your checked out branch.
+
+6. git log -- Vehicle.h
+Finds all commits involving Vehicle.h
+
+7. git log --grep="file"
+finds all commits where the message contains the word "file"
+
+8. 
+Inheritance is where one class inherits properties or behaviors from a superclass/base class. For example a PoweredVehicle is a vehicle and can use what a vehicle has, as well as extending onto it.
+
+Polymorphism is where you override a method that was inherited. If vehicle had a method that did one operation, but you wanted it to do something different in PoweredVehicle, you would re-create the method in powered vehicle and it would be executed through PolyMorphism.
+
+Encapsulation can be seen through the public methods that access private variables. This is done so that validation can occur in a setter, for example. It abstracts away the private data.
+
+9. The main difference between these two workflows is that in the Integration manager workflow, there is a single Integration manager for the project. In the Dictator and Lieutenants workflow, there are two lieutenant buffers that split up merging the work before the dictator does the final merge.
+
+10. A team of 100 developers would have a massive amount of conflicts working on a project simultaneously, so a structure like Dictator and Lieutenants could assign more people to bringing the collective efforts together more seamlessly than 100 people merging to the same project simultaneously.
+
